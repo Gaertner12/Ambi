@@ -1,17 +1,14 @@
-﻿using System;
-
-using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
+﻿using Android.App;
 using Android.Widget;
 using Android.OS;
 
 namespace Ambi
 {
 	[Activity (Label = "Ambi", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class ScannerActivity : Activity
+	public class MainActivity : Activity
 	{
+		int count = 1;
+
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
@@ -19,7 +16,13 @@ namespace Ambi
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
-			var scannerPresenter = new ScannerPresenter (this);
+			// Get our button from the layout resource,
+			// and attach an event to it
+			Button button = FindViewById<Button> (Resource.Id.myButton);
+			
+			button.Click += delegate {
+				button.Text = string.Format ("{0} clicks!", count++);
+			};
 		}
 	}
 }
