@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambi", "Ambi\Ambi.csproj", "{000EE929-DE38-42CD-99B9-782C487D7D4B}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ambi", "Ambi\Ambi.shproj", "{9DE9F2EC-2BAE-44EA-B70C-F857CB83BD63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ambi.Droid", "Droid\Ambi.Droid.csproj", "{256EEFF4-49AC-419C-A8C3-52FBC50CC370}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +11,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{000EE929-DE38-42CD-99B9-782C487D7D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{000EE929-DE38-42CD-99B9-782C487D7D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{000EE929-DE38-42CD-99B9-782C487D7D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{000EE929-DE38-42CD-99B9-782C487D7D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256EEFF4-49AC-419C-A8C3-52FBC50CC370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256EEFF4-49AC-419C-A8C3-52FBC50CC370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256EEFF4-49AC-419C-A8C3-52FBC50CC370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256EEFF4-49AC-419C-A8C3-52FBC50CC370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
