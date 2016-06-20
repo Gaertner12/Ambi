@@ -22,9 +22,21 @@ namespace Ambi
 			SetContentView (Resource.Layout.ProductPage);
 
 			TextView productIdText = FindViewById<TextView> (Resource.Id.productIdText);
-			//var id = Intent.GetStringExtra ("ProductId");
+			TextView productNameText = FindViewById<TextView> (Resource.Id.productNameText);
 
-			productIdText.Text = 'whoop';	
+			var id = Intent.GetStringExtra ("ProductId");
+			Toast.MakeText (this, id, ToastLength.Long).Show ();
+
+			var product = new Product (id);
+
+			if (product.fetch ()) {
+				productIdText.Text = product.id;
+				productNameText.Text = product.name;
+			} else {
+				Intent intent = new Intent (this, typeof(NewProductActivity));
+				intent.PutExtra ("ProductId", product.id);
+				this.StartActivity (intent);
+			}
 		}
 	}
 }

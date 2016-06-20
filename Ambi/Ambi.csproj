@@ -61,6 +61,8 @@
     <Compile Include="Presenter\ScannerPresenter.cs" />
     <Compile Include="ProductPageActivity.cs" />
     <Compile Include="ScannerActivity.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="NewProductActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

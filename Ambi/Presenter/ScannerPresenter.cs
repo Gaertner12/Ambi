@@ -16,10 +16,10 @@ namespace Ambi
 		}
 
 		public async Task startScan(){
-			var scanner = new MobileBarcodeScanner();
-			var result = await scanner.Scan();
+			//var scanner = new MobileBarcodeScanner();
+			//var result = await scanner.Scan();
 
-			this.id = result.Text;
+			this.id = "91523";
 		}
 	}
 }

@@ -40,8 +40,8 @@ namespace Ambi
 
 		protected void openProductView(string id){
 			Intent intent = new Intent (this, typeof(ProductPageActivity));
-			intent.PutExtra ("ProductId", id);
-			this.StartActivity (typeof(ProductPageActivity));
+			intent.PutExtra ("ProductId", id.ToString());
+			this.StartActivity (intent);
 		}
 	}
 }
