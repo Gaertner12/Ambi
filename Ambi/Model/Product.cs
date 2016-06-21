@@ -14,7 +14,7 @@ namespace Ambi
 		}
 
 		public bool fetch(){
-			if (this.id != null) {
+			if (false) {
 				this.name = "Nutella";
 
 				return true;

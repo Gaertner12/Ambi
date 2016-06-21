@@ -19,8 +19,28 @@ namespace Ambi
 		protected override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
+			SetContentView (Resource.Layout.NewProduct);
+			var id = Intent.GetStringExtra ("ProductId");
 
-			// Create your application here
+			TextView idInput = FindViewById<TextView> (Resource.Id.productIdInput);
+			TextView nameInput = FindViewById<TextView> (Resource.Id.productNameInput);
+			Button submit = FindViewById<Button> (Resource.Id.productSubmit);
+
+			idInput.Text = id;
+
+			submit.Click += delegate {
+				if(nameInput.Text != ""){
+					Product product = new Product(id);
+					product.name = nameInput.Text;
+					product.toDatabase();
+
+					Intent intent = new Intent (this, typeof(ProductPageActivity));
+					intent.PutExtra ("ProductId", id.ToString());
+					this.StartActivity (intent);
+				} else {
+					Toast.MakeText (this, "Bitte alle Felder ausfüllen", ToastLength.Long).Show ();
+				}
+			};
 		}
 	}
 }
