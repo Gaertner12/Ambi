@@ -25,8 +25,6 @@ namespace Ambi
 			TextView productNameText = FindViewById<TextView> (Resource.Id.productNameText);
 
 			var id = Intent.GetStringExtra ("ProductId");
-			Toast.MakeText (this, id, ToastLength.Long).Show ();
-
 			var product = new Product (id);
 
 			if (product.fetch ()) {
@@ -36,6 +34,7 @@ namespace Ambi
 				Intent intent = new Intent (this, typeof(NewProductActivity));
 				intent.PutExtra ("ProductId", product.id);
 				this.StartActivity (intent);
+				Finish ();
 			}
 		}
 	}

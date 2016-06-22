@@ -10,6 +10,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.IO;
+using SQLite;
 
 namespace Ambi
 {
@@ -30,13 +32,18 @@ namespace Ambi
 
 			submit.Click += delegate {
 				if(nameInput.Text != ""){
+					string dbPath = Path.Combine (System.Environment.GetFolderPath (System.Environment.SpecialFolder.Personal),"ambi.db3");
+					var db = new SQLiteConnection (dbPath);
+					db.CreateTable<Product> ();
+
 					Product product = new Product(id);
 					product.name = nameInput.Text;
-					product.toDatabase();
+					db.InsertOrReplace (product);
 
 					Intent intent = new Intent (this, typeof(ProductPageActivity));
 					intent.PutExtra ("ProductId", id.ToString());
 					this.StartActivity (intent);
+					Finish();
 				} else {
 					Toast.MakeText (this, "Bitte alle Felder ausfüllen", ToastLength.Long).Show ();
 				}

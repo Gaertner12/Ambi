@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.IO;
+using SQLite;
 
 
 namespace Ambi
@@ -18,16 +20,11 @@ namespace Ambi
 		{
 			//Toast.MakeText (this, scannerPresenter.id, ToastLength.Long).Show ();
 			base.OnCreate (savedInstanceState);
-
-			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
 
 			scannerPresenter = new ScannerPresenter ();
 
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
+			Button button = FindViewById<Button> (Resource.Id.myButton);			
 			button.Click += delegate {
 				scanForProduct();
 			};
