@@ -21,10 +21,10 @@ namespace Ambi
 			base.OnCreate (savedInstanceState);
 			SetContentView (Resource.Layout.ProductPage);
 
-			TextView productIdText = FindViewById<TextView> (Resource.Id.productIdText);
+			//TextView productIdText = FindViewById<TextView> (Resource.Id.productIdText);
 			//var id = Intent.GetStringExtra ("ProductId");
 
-			productIdText.Text = 'whoop';	
+			//productIdText.Text = 'whoop';	
 		}
 	}
 }

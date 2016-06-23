@@ -14,23 +14,14 @@ namespace Ambi
 	public class ScannerActivity : Activity
 	{
 		protected ScannerPresenter scannerPresenter;
-		protected override void OnCreate (Bundle savedInstanceState)
+		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			//Toast.MakeText (this, scannerPresenter.id, ToastLength.Long).Show ();
-			base.OnCreate (savedInstanceState);
+			base.OnCreate(savedInstanceState);
+			SetContentView(Resource.Layout.Main);
 
-			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+			scannerPresenter = new ScannerPresenter();
 
-			scannerPresenter = new ScannerPresenter ();
-
-			// Get our button from the layout resource,
-			// and attach an event to it
-			Button button = FindViewById<Button> (Resource.Id.myButton);
-			
-			button.Click += delegate {
-				scanForProduct();
-			};
+			scanForProduct();
 		}
 
 		protected async void scanForProduct(){

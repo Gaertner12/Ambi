@@ -77,6 +77,8 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\ProductPage.axml" />
+    <AndroidResource Include="Resources\values\theme.xml" />
+    <AndroidResource Include="Resources\drawable\header.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
