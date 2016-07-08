@@ -79,6 +79,12 @@
     <AndroidResource Include="Resources\layout\ProductPage.axml" />
     <AndroidResource Include="Resources\values\theme.xml" />
     <AndroidResource Include="Resources\drawable\header.png" />
+    <AndroidResource Include="Resources\drawable\placeholder.png" />
+    <AndroidResource Include="Resources\drawable\border.xml" />
+    <AndroidResource Include="Resources\drawable\upvote.png" />
+    <AndroidResource Include="Resources\drawable\downvote.png" />
+    <AndroidResource Include="Resources\drawable\commentBorder.xml" />
+    <AndroidResource Include="Resources\drawable\button.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

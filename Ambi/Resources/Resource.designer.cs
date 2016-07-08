@@ -48,7 +48,13 @@ namespace Ambi
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int theme_black_notitlebar_fullscreen_background = 2131099648;
+			public const int backgroundColor = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int lineColor = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int theme_black_notitlebar_fullscreen_background = 2131099650;
 			
 			static Color()
 			{
@@ -64,7 +70,25 @@ namespace Ambi
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int header = 2130837504;
+			public const int border = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int button = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int commentBorder = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int downvote = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int header = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int placeholder = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int upvote = 2130837510;
 			
 			static Drawable()
 			{
@@ -79,14 +103,59 @@ namespace Ambi
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080002
-			public const int contentFrame = 2131230722;
+			// aapt resource value: 0x7f080004
+			public const int Product = 2131230724;
 			
-			// aapt resource value: 0x7f080001
-			public const int imageView1 = 2131230721;
+			// aapt resource value: 0x7f08000f
+			public const int comment = 2131230735;
+			
+			// aapt resource value: 0x7f080010
+			public const int comment2 = 2131230736;
+			
+			// aapt resource value: 0x7f08000d
+			public const int commentSection = 2131230733;
+			
+			// aapt resource value: 0x7f080011
+			public const int contentFrame = 2131230737;
+			
+			// aapt resource value: 0x7f08000c
+			public const int downvoteImage = 2131230732;
+			
+			// aapt resource value: 0x7f08000b
+			public const int downvotes = 2131230731;
+			
+			// aapt resource value: 0x7f080002
+			public const int head_image = 2131230722;
+			
+			// aapt resource value: 0x7f080003
+			public const int headline = 2131230723;
+			
+			// aapt resource value: 0x7f08000e
+			public const int newCommentButton = 2131230734;
+			
+			// aapt resource value: 0x7f080005
+			public const int productImage = 2131230725;
+			
+			// aapt resource value: 0x7f080006
+			public const int productName = 2131230726;
 			
 			// aapt resource value: 0x7f080000
-			public const int relativeLayout1 = 2131230720;
+			public const int productPage = 2131230720;
+			
+			// aapt resource value: 0x7f080007
+			public const int rating = 2131230727;
+			
+			// aapt resource value: 0x7f080008
+			public const int ratingWrapper = 2131230728;
+			
+			// aapt resource value: 0x7f080001
+			public const int topBar = 2131230721;
+			
+			// aapt resource value: 0x7f08000a
+			public const int upvoteImage = 2131230730;
+			
+			// aapt resource value: 0x7f080009
+			public const int upvotes = 2131230729;
 			
 			static Id()
 			{
