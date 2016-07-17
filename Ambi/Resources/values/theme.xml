@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-	<color name="theme_black_notitlebar_fullscreen_background">#fffbebc1</color>
 	<style name="Theme.Custom" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+		<item name="android:windowNoTitle">true</item>
 		<item name="android:windowBackground">?android:attr/colorBackground</item>
-		<item name="android:textColorPrimary">#3a3939</item>
-		<item name="android:textColorSecondary">#3a3939</item>
+		<item name="android:textColorPrimary">@color/textColor</item>
+		<item name="android:textColorSecondary">@color/textColor</item>
 	</style>
 </resources>

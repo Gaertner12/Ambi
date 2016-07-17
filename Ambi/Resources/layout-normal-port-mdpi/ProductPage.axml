@@ -20,34 +20,35 @@
         <TextView
             p1:id="@+id/headline"
             p1:text="Ambi"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
+            p1:layout_width="101.0dp"
+            p1:layout_height="77.0dp"
             p1:layout_centerVertical="true"
             p1:layout_centerHorizontal="true"
-            p1:textSize="100dp"
-            p1:textColor="#ffffffff" />
+            p1:textColor="#ffffffff"
+            p1:textSize="40dp"
+            p1:layout_marginRight="0.0dp" />
     </RelativeLayout>
 <!-- Anzeige Produkt -->
     <RelativeLayout
         p1:id="@+id/Product"
         p1:layout_below="@+id/topBar"
         p1:layout_width="match_parent"
-        p1:layout_height="350dp">
+        p1:layout_height="171.0dp">
         <ImageView
             p1:src="@drawable/placeholder"
-            p1:layout_width="250dp"
-            p1:layout_height="250dp"
+            p1:layout_width="104.0dp"
+            p1:layout_height="118.7dp"
             p1:id="@+id/productImage"
             p1:layout_centerHorizontal="true"
             p1:layout_marginTop="15.5dp" />
         <TextView
             p1:id="@+id/productName"
             p1:text="ProductName"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
+            p1:layout_width="99.0dp"
+            p1:layout_height="21.0dp"
             p1:layout_below="@id/productImage"
             p1:layout_centerHorizontal="true"
-            p1:textSize="30dp"
+            p1:textSize="15dp"
             p1:layout_marginTop="15dp" />
     </RelativeLayout>
 <!-- Anzeige Bewertung -->
@@ -55,8 +56,9 @@
         p1:id="@+id/rating"
         p1:layout_below="@+id/Product"
         p1:layout_width="match_parent"
-        p1:layout_height="150dp"
-        p1:background="@drawable/border">
+        p1:layout_height="56.0dp"
+        p1:background="@drawable/border"
+        p1:layout_marginLeft="0.0dp">
         <RelativeLayout
             p1:id="@+id/ratingWrapper"
             p1:layout_width="wrap_content"
@@ -111,8 +113,8 @@
                 p1:id="@+id/newCommentButton"
                 p1:background="@null"
                 p1:src="@drawable/button"
-                p1:layout_width="40dp"
-                p1:layout_height="40dp"
+                p1:layout_width="33.0dp"
+                p1:layout_height="30.0dp"
                 p1:scaleType="fitCenter"
                 p1:adjustViewBounds="true"
                 p1:layout_margin="10dp"
@@ -124,8 +126,7 @@
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:background="@drawable/commentBorder"
-                p1:layout_marginTop="30dp"
-                p1:textSize="30dp" />
+                p1:layout_marginTop="30dp" />
             <TextView
                 p1:id="@+id/comment2"
                 p1:text="Das ist noch ein Test"
@@ -134,8 +135,7 @@
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:background="@drawable/commentBorder"
-                p1:layout_marginTop="30dp"
-                p1:textSize="30dp" />
+                p1:layout_marginTop="30dp" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

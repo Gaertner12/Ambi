@@ -54,7 +54,7 @@ namespace Ambi
 			public const int lineColor = 2131099649;
 			
 			// aapt resource value: 0x7f060002
-			public const int theme_black_notitlebar_fullscreen_background = 2131099650;
+			public const int textColor = 2131099650;
 			
 			static Color()
 			{
@@ -196,7 +196,10 @@ namespace Ambi
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Icon = 2130903040;
+			public const int AndroidManifest = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Icon = 2130903041;
 			
 			static Mipmap()
 			{

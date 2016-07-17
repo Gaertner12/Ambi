@@ -4,5 +4,6 @@
 	<string name="app_name">Ambi</string>
 	<color name="backgroundColor">#fbebc1</color>
 	<color name="lineColor">#908e8e</color>
+	<color name="textColor">#2c2727</color>
 	
 </resources>
