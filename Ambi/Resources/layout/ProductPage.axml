@@ -39,7 +39,7 @@
             p1:layout_height="250dp"
             p1:id="@+id/productImage"
             p1:layout_centerHorizontal="true"
-            p1:layout_marginTop="15.5dp" />
+            p1:layout_marginTop="13dp" />
         <TextView
             p1:id="@+id/productName"
             p1:text="ProductName"
@@ -48,7 +48,7 @@
             p1:layout_below="@id/productImage"
             p1:layout_centerHorizontal="true"
             p1:textSize="30dp"
-            p1:layout_marginTop="15dp" />
+            p1:layout_marginTop="12dp" />
     </RelativeLayout>
 <!-- Anzeige Bewertung -->
     <RelativeLayout
@@ -66,6 +66,7 @@
             <TextView
                 p1:id="@+id/upvotes"
                 p1:text="0"
+                p1:textColor="@color/textColor"
                 p1:layout_width="wrap_content"
                 p1:layout_centerVertical="true"
                 p1:layout_height="wrap_content"
@@ -82,6 +83,7 @@
             <TextView
                 p1:id="@+id/downvotes"
                 p1:text="0"
+                p1:textColor="@color/textColor"
                 p1:layout_centerVertical="true"
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
@@ -119,6 +121,7 @@
                 p1:layout_alignParentRight="true" />
             <TextView
                 p1:id="@+id/comment"
+                p1:textColor="@color/textColor"
                 p1:text="Das ist ein Test"
                 p1:layout_centerHorizontal="true"
                 p1:layout_width="wrap_content"

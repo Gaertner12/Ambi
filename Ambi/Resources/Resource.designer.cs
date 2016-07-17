@@ -56,6 +56,9 @@ namespace Ambi
 			// aapt resource value: 0x7f060002
 			public const int textColor = 2131099650;
 			
+			// aapt resource value: 0x7f060003
+			public const int theme_devicedefault_background = 2131099651;
+			
 			static Color()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -196,10 +199,7 @@ namespace Ambi
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int AndroidManifest = 2130903040;
-			
-			// aapt resource value: 0x7f030001
-			public const int Icon = 2130903041;
+			public const int icon = 2130903040;
 			
 			static Mipmap()
 			{
