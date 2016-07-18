@@ -101,7 +101,7 @@
     </RelativeLayout>
 <!-- Anzeige Kommentare -->
     <ScrollView
-        p1:layout_below="@+id/commentSection"
+        p1:layout_below="@+id/rating"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:fillViewport="true">
@@ -109,36 +109,23 @@
             p1:id="@+id/commentSectionLayout"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content">
-            <ImageButton
-                p1:id="@+id/newCommentButton"
-                p1:background="@null"
-                p1:src="@drawable/button"
-                p1:layout_width="40dp"
-                p1:layout_height="40dp"
-                p1:scaleType="fitCenter"
-                p1:adjustViewBounds="true"
-                p1:layout_margin="10dp"
-                p1:layout_alignParentRight="true" />
-            <TextView
+            <EditText
+                p1:layout_marginTop="50dp"
+                p1:minWidth="350dp"
+                p1:minHeight="120dp"
                 p1:id="@+id/comment"
-                p1:textColor="@color/textColor"
-                p1:text="Das ist ein Test"
-                p1:layout_centerHorizontal="true"
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
-                p1:background="@drawable/commentBorder"
-                p1:layout_marginTop="30dp"
-                p1:textSize="30dp" />
-            <TextView
-                p1:id="@+id/comment2"
-                p1:text="Das ist noch ein Test"
-                p1:layout_below="@+id/comment"
+                p1:hint="Deine Textbewertung hier..."
                 p1:layout_centerHorizontal="true"
+                p1:inputType="text" />
+            <Button
+                p1:text="senden"
                 p1:layout_width="wrap_content"
-                p1:layout_height="wrap_content"
-                p1:background="@drawable/commentBorder"
-                p1:layout_marginTop="30dp"
-                p1:textSize="30dp" />
+                p1:layout_height="35dp"
+                p1:id="@+id/send"
+                p1:layout_below="@id/comment"
+                p1:layout_centerHorizontal="true" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>

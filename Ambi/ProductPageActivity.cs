@@ -26,6 +26,7 @@ namespace Ambi
 
 			//productIdText.Text = 'whoop';	
 		}
+
 	}
 }
 

@@ -34,6 +34,13 @@ namespace Ambi
 			intent.PutExtra ("ProductId", id);
 			this.StartActivity (typeof(ProductPageActivity));
 		}
+
+		protected void onBackPressed()
+		{
+			new AlertDialog.Builder(this)
+   			.SetMessage("hi")
+   			.Show();
+		}
 	}
 }
 
