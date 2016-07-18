@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="theme_devicedefault_background">#ffdcdcdc</color>
+	<style name="Theme.Custom" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">?android:attr/colorBackground</item>
+		<item name="android:textColor">@color/textColor</item>
+		<item name="android:fontFamily">Helvetica</item>
+		<item name="android:textColorPrimary">@color/textColor</item>
+		<item name="android:textColorSecondary">@color/textColor</item>
+	</style>
+</resources>

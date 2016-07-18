@@ -21,6 +21,7 @@ namespace Ambi
 			base.OnCreate (savedInstanceState);
 			SetContentView (Resource.Layout.ProductPage);
 
+<<<<<<< HEAD
 			TextView productIdText = FindViewById<TextView> (Resource.Id.productIdText);
 			TextView productNameText = FindViewById<TextView> (Resource.Id.productNameText);
 
@@ -36,7 +37,14 @@ namespace Ambi
 				this.StartActivity (intent);
 				Finish ();
 			}
+=======
+			//TextView productIdText = FindViewById<TextView> (Resource.Id.productIdText);
+			//var id = Intent.GetStringExtra ("ProductId");
+
+			//productIdText.Text = 'whoop';	
+>>>>>>> refs/remotes/origin/Design/Interface-Branch
 		}
+
 	}
 }
 

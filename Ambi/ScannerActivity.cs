@@ -16,8 +16,9 @@ namespace Ambi
 	public class ScannerActivity : Activity
 	{
 		protected ScannerPresenter scannerPresenter;
-		protected override void OnCreate (Bundle savedInstanceState)
+		protected override void OnCreate(Bundle savedInstanceState)
 		{
+<<<<<<< HEAD
 			//Toast.MakeText (this, scannerPresenter.id, ToastLength.Long).Show ();
 			base.OnCreate (savedInstanceState);
 			SetContentView (Resource.Layout.Main);
@@ -28,6 +29,14 @@ namespace Ambi
 			button.Click += delegate {
 				scanForProduct();
 			};
+=======
+			base.OnCreate(savedInstanceState);
+			SetContentView(Resource.Layout.Main);
+
+			scannerPresenter = new ScannerPresenter();
+
+			scanForProduct();
+>>>>>>> refs/remotes/origin/Design/Interface-Branch
 		}
 
 		protected async void scanForProduct(){
@@ -39,6 +48,13 @@ namespace Ambi
 			Intent intent = new Intent (this, typeof(ProductPageActivity));
 			intent.PutExtra ("ProductId", id.ToString());
 			this.StartActivity (intent);
+		}
+
+		protected void onBackPressed()
+		{
+			new AlertDialog.Builder(this)
+   			.SetMessage("hi")
+   			.Show();
 		}
 	}
 }

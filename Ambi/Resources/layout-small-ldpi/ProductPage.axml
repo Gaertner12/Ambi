@@ -1,25 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <TextView
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/productIdText" />
-    <TextView
-        android:text="Large Text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/productNameText" />
-</LinearLayout>
-=======
 <RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
     p1:layout_width="match_parent"
     p1:layout_height="match_parent"
@@ -41,11 +20,11 @@
         <TextView
             p1:id="@+id/headline"
             p1:text="Ambi"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
+            p1:layout_width="137.3dp"
+            p1:layout_height="65.3dp"
             p1:layout_centerVertical="true"
             p1:layout_centerHorizontal="true"
-            p1:textSize="100dp"
+            p1:textSize="50dp"
             p1:textColor="#ffffffff" />
     </RelativeLayout>
 <!-- Anzeige Produkt -->
@@ -53,30 +32,31 @@
         p1:id="@+id/Product"
         p1:layout_below="@+id/topBar"
         p1:layout_width="match_parent"
-        p1:layout_height="350dp">
+        p1:layout_height="169.3dp"
+        p1:layout_marginBottom="0.0dp">
         <ImageView
             p1:src="@drawable/placeholder"
-            p1:layout_width="250dp"
-            p1:layout_height="250dp"
+            p1:layout_width="104.0dp"
+            p1:layout_height="118.7dp"
             p1:id="@+id/productImage"
             p1:layout_centerHorizontal="true"
-            p1:layout_marginTop="13dp" />
+            p1:layout_marginTop="15.5dp" />
         <TextView
             p1:id="@+id/productName"
             p1:text="ProductName"
-            p1:layout_width="wrap_content"
-            p1:layout_height="wrap_content"
+            p1:layout_width="141.3dp"
+            p1:layout_height="34.7dp"
             p1:layout_below="@id/productImage"
             p1:layout_centerHorizontal="true"
-            p1:textSize="30dp"
-            p1:layout_marginTop="12dp" />
+            p1:textSize="20dp"
+            p1:layout_marginTop="1dp" />
     </RelativeLayout>
 <!-- Anzeige Bewertung -->
     <RelativeLayout
         p1:id="@+id/rating"
         p1:layout_below="@+id/Product"
         p1:layout_width="match_parent"
-        p1:layout_height="150dp"
+        p1:layout_height="44.0dp"
         p1:background="@drawable/border">
         <RelativeLayout
             p1:id="@+id/ratingWrapper"
@@ -87,7 +67,6 @@
             <TextView
                 p1:id="@+id/upvotes"
                 p1:text="0"
-                p1:textColor="@color/textColor"
                 p1:layout_width="wrap_content"
                 p1:layout_centerVertical="true"
                 p1:layout_height="wrap_content"
@@ -104,7 +83,6 @@
             <TextView
                 p1:id="@+id/downvotes"
                 p1:text="0"
-                p1:textColor="@color/textColor"
                 p1:layout_centerVertical="true"
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
@@ -122,12 +100,12 @@
     </RelativeLayout>
 <!-- Anzeige Kommentare -->
     <ScrollView
-        p1:layout_below="@+id/commentSection"
+        p1:layout_below="@+id/rating"
         p1:layout_width="match_parent"
         p1:layout_height="wrap_content"
         p1:fillViewport="true">
         <RelativeLayout
-            p1:id="@+id/commentSectionLayout"
+            p1:id="@+id/commentSection"
             p1:layout_width="match_parent"
             p1:layout_height="wrap_content">
             <ImageButton
@@ -142,14 +120,12 @@
                 p1:layout_alignParentRight="true" />
             <TextView
                 p1:id="@+id/comment"
-                p1:textColor="@color/textColor"
                 p1:text="Das ist ein Test"
                 p1:layout_centerHorizontal="true"
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:background="@drawable/commentBorder"
-                p1:layout_marginTop="30dp"
-                p1:textSize="30dp" />
+                p1:layout_marginTop="30dp" />
             <TextView
                 p1:id="@+id/comment2"
                 p1:text="Das ist noch ein Test"
@@ -158,9 +134,7 @@
                 p1:layout_width="wrap_content"
                 p1:layout_height="wrap_content"
                 p1:background="@drawable/commentBorder"
-                p1:layout_marginTop="30dp"
-                p1:textSize="30dp" />
+                p1:layout_marginTop="30dp" />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
->>>>>>> refs/remotes/origin/Design/Interface-Branch
