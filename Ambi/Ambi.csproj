@@ -73,10 +73,6 @@
     <Compile Include="ScannerActivity.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="NewProductActivity.cs" />
-    <Compile Include="Model\Comment.cs" />
-    <Compile Include="Model\UserImage.cs" />
-    <Compile Include="Model\UserImageCollection.cs" />
-    <Compile Include="Model\CommentCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
