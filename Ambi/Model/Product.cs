@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using SQLite;
 using System.IO;
+using Android.Media;
 
 namespace Ambi
 {
@@ -12,6 +13,8 @@ namespace Ambi
 		[PrimaryKey]
 		public string id{get; set;}
 		public string name{ get; set;}
+		public UserImageCollection userImageCollection{ get; set;}
+		public CommentCollection commentCollection{ get; set;}
 
 		[Ignore]
 		private SQLiteConnection db{ get; set; }
